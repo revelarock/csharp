@@ -25,22 +25,46 @@ namespace WindowsFormsArrays
         {
             //Arrays
 
-            int[] valores;
-            valores = new int[5];
+            //int[] valores;
+            //valores = new int[5];
 
-            //Nas Coleções o Índice começa em 0
+            ////Nas Coleções o Índice começa em 0
 
-            valores[0] = 10;
-            valores[1] = 20;
-            valores[2] = 30;
-            valores[3] = 40;
-            valores[4] = 50;
+            //valores[0] = 10;
+            //valores[1] = 20;
+            //valores[2] = 30;
+            //valores[3] = 40;
+            //valores[4] = 50;
+
+            //int resultado = valores[0] + valores[4];
+
+            int[] valores = new int[] 
+            {
+                10,20,30,40,50
+            };
+            //foreach (int valor in valores)
+            //    listBox1.Items.Add(valor);
+
+            for (int indice = 0; indice < valores.Length; indice++)
+                listBox1.Items.Add(valores[indice]);
+            
+
+
+
+           
+
+            
 
 
 
 
 
 
+
+        }
+
+        private void listBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
